@@ -1,0 +1,34 @@
+package thp.tp1.actividad1;
+
+import java.util.Scanner;
+
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+		double valorHora;
+		double horasHabiles;
+		double valorLuAVi;
+		double valorSab;
+		double sueldoSemanal;
+		final int DIAS_HABILES = 5;
+		/////////////////////////////////////////////////
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Ingrese el valor por hora: ");
+		valorHora = input.nextDouble();
+		
+		System.out.println("Ingrese la cantidad de horas hábiles trabajadas por día: ");
+		horasHabiles = input.nextDouble();
+		
+		input.close();
+		/////////////////////////////////////////////////
+		valorLuAVi = valorHora * DIAS_HABILES;
+		
+		valorSab = valorHora / 2;
+		
+		sueldoSemanal = valorLuAVi + valorSab;
+		/////////////////////////////////////////////////
+		System.out.println("Su sueldo semanal es de: $" + sueldoSemanal);
+	}
+
+}

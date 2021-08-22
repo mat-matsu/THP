@@ -1,0 +1,47 @@
+package thp.tp1.actividad2;
+
+import java.util.Scanner;
+
+public class Ejercicio20 {
+
+	public static void main(String[] args) {
+		String operador;
+		int num1;
+		int num2;
+		double res;
+		/////////////////////////////////////////////////
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Ingrese el primer numero: ");
+		num1 = input.nextInt();
+		
+		System.out.println("Ingrese el segundo numero: ");
+		num2 = input.nextInt();
+		
+		System.out.println("Ingrese el operador: ");
+		operador = input.nextLine();
+		
+		input.close();
+		/////////////////////////////////////////////////
+		switch(operador) {
+			case "+":
+				res = num1 + num2;
+			case "-":
+				res = num1 - num2;
+			case "*":
+				res = num1 * num2;
+			case "/":
+				if (num2 == 0) {
+					System.out.println("ERROR;");
+				} else {
+					res = num1 / num2;
+				}
+			default:
+				System.out.println("ERROR;");
+		}
+		
+		System.out.println(num1 + " " + operador + " " + num2 + " = " + res);
+
+	}
+
+}
