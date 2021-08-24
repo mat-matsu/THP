@@ -1,0 +1,20 @@
+package thp.tp1.actividad3;
+
+public class Ejercicio33 {
+
+	public static void main(String[] args) {
+		int cont;
+		final int MAX = 5;
+		final int MIN = 1;
+		
+		for (cont = MIN; cont <= MAX; cont++) {
+			System.out.println(cont);
+		}
+		
+		for (cont = MAX; cont >= MIN; cont--) {
+			System.out.println(cont);
+		}
+
+	}
+
+}

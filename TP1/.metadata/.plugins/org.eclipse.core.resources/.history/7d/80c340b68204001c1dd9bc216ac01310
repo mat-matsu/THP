@@ -1,0 +1,27 @@
+package thp.tp1.actividad3;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+
+public class Ejercicio38 {
+
+	public static void main(String[] args) throws ParseException {
+		String mes = "2";
+		int month = 2;
+		Date dateTime;
+		Date d = new SimpleDateFormat("MM", Locale.ENGLISH).parse(String.valueOf(month));
+	    Calendar cal = Calendar.getInstance();
+	    cal.setTime(d);
+	    String monthName = new SimpleDateFormat("MMMM").format(cal.getTime());
+
+		/////////////////////////////////////////////////
+		
+			System.out.println("Ingrese el sueldo del mes de " + monthName + ": ");
+
+	}
+
+}

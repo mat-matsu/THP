@@ -1,0 +1,19 @@
+package thp.tp1.actividad3;
+
+import java.util.Calendar;
+//import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class Ejercicio38 {
+
+	public static void main(String[] args) {
+		//Date mes;
+		Calendar month = new GregorianCalendar();
+
+		/////////////////////////////////////////////////
+		
+			System.out.println("Ingrese el sueldo del mes de " + month.get(0) + ": ");
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package thp.tp1.actividad3;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Ejercicio37 {
+
+	public static void main(String[] args) {
+		Date mes;
+		Calendar month = new GregorianCalendar();
+		double sueldo;
+		double total = 0;
+		boolean flag = true;
+		final int EXIT = 0;
+		/////////////////////////////////////////////////
+		Scanner input = new Scanner(System.in).useLocale(Locale.US);
+		
+		while(flag) {
+			System.out.println("Ingrese el sueldo del mes de " + month.get(Calendar.MONTH) + ": ");
+			num = Double.parseDouble(input.nextLine());
+			
+			cont++;
+			suma+= num;
+			prom = suma / cont;
+						
+			if (prom >= EXIT) {
+				flag = false;
+			}
+		}
+		input.close();
+		/////////////////////////////////////////////////
+		System.out.println("La cantidad de valores ingresados es de: " + cont);
+
+	}
+
+}

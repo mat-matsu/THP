@@ -38,7 +38,7 @@ public class Ejercicio20 {
 				if (num2 == 0) {
 					flag = false;
 				} else {
-					res = num1 / num2;
+					res = (double)num1 / (double)num2;
 				}
 				break;
 			default:

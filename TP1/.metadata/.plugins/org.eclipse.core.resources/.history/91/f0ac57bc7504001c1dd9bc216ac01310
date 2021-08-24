@@ -1,0 +1,27 @@
+package thp.tp1.actividad3;
+
+import java.util.Scanner;
+
+public class Ejercicio32 {
+
+	public static void main(String[] args) {
+		int nota;
+		final int NOTA_USAR = 2;
+		final int NOTA_MAX = 10;
+		final int NOTA_NO_USAR = 3;
+		/////////////////////////////////////////////////
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Ingrese la nota: ");
+		nota = Integer.parseInt(input.nextLine());
+		
+		while ( (nota != NOTA_USAR) || (nota > NOTA_MAX || nota <= NOTA_NO_USAR) ) {
+			System.out.println("Error. Ingrese una nota entre valida: ");
+			nota = Integer.parseInt(input.nextLine());
+		}
+		
+		input.close();
+
+	}
+
+}

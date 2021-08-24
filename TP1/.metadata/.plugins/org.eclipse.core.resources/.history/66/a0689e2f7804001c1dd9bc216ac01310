@@ -1,0 +1,26 @@
+package thp.tp1.actividad3;
+
+import java.util.Scanner;
+
+public class Ejercicio33 {
+
+	public static void main(String[] args) {
+		int num;
+		int max = 0;
+		int min = 0;
+		/////////////////////////////////////////////////
+		Scanner input = new Scanner(System.in);
+		
+		do {
+			System.out.println("Ingrese un número entero o ingrese 0 para finalizar: ");
+			num = Integer.parseInt(input.nextLine());
+			
+			max = num>max?num:max;
+			
+			min = num<min?num:min;
+			
+		} while (num != 0);
+
+	}
+
+}
